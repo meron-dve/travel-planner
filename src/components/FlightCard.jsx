@@ -1,24 +1,19 @@
 
-import React, { useContext } from "react";
-import { ItineraryContext } from "../context/ItineraryContext";
+import React from "react";
 
-function FlightCard({ flight }) {
-  const { addFlight } = useContext(ItineraryContext);
-
+function FlightCard({ flight, onAdd }) {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6">
-
-      <h3 className="font-semibold">{flight.airline}</h3>
-      <p>{flight.departure} → {flight.arrival}</p>
-      <p className="text-blue-600 font-bold">${flight.price}</p>
-
+    <div className="bg-white p-4 rounded-xl shadow mb-4 flex justify-between">
+      <div>
+        <p className="font-bold">{flight.airline}</p>
+        <p>${flight.price}</p>
+      </div>
       <button
-        onClick={() => addFlight(flight)}
-        className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-xl"
+        onClick={onAdd}
+        className="bg-blue-600 text-white px-4 py-2 rounded"
       >
-        Book Flight
+        Add
       </button>
-
     </div>
   );
 }

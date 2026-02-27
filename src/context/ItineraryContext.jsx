@@ -1,38 +1,21 @@
+
 import React, { createContext, useState } from "react";
 
-export const ItineraryContext = createContext({
-items:[],
-addItem: () => {},
-removeItem: () => {},
-});
+export const ItineraryContext = createContext();
+
 export const ItineraryProvider = ({ children }) => {
-  const [itinerary, setItinerary] = useState({
-    destination: null,
-    flight: null,
-    hotel: null,
-  });
+  const [items, setItems] = useState([]);
 
-  const addDestination = (destination) => {
-    setItinerary((prev) => ({ ...prev, destination }));
+  const addItem = (item) => {
+    setItems((prev) => [...prev, item]);
   };
 
-  const addFlight = (flight) => {
-    setItinerary((prev) => ({ ...prev, flight }));
-  };
-
-  const addHotel = (hotel) => {
-    setItinerary((prev) => ({ ...prev, hotel }));
+  const removeItem = (id) => {
+    setItems((prev) => prev.filter((item) => item.uniqueId !== id));
   };
 
   return (
-    <ItineraryContext.Provider
-      value={{
-        itinerary,
-        addDestination,
-        addFlight,
-        addHotel,
-      }}
-    >
+    <ItineraryContext.Provider value={{ items, addItem, removeItem }}>
       {children}
     </ItineraryContext.Provider>
   );
