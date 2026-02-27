@@ -1,7 +1,7 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
-function DestinationDetails({}) {
-    const { id } = useParams();
+import { useNavigate } from "react-router-dom";
+function DestinationDetails() {
+   
     const navigate = useNavigate();
   return (
     <div className="p-10">
@@ -10,7 +10,7 @@ function DestinationDetails({}) {
 Go Back
      </button>
      <h1 className="text-3x1 font-bold">
-        Destination Detail (ID: {id}) </h1>
+        Destination Detail </h1>
     </div>
   );
 }
