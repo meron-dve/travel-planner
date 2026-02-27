@@ -68,4 +68,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # travel-planner
+
+# 🌍 Travel Planner App
+
+A responsive **Travel Planner** application built with **React**, **Tailwind CSS**, and **Context API**.
+
+The app allows users to:
+
+- Search for **destinations, flights, and hotels**
+- Add items to a **travel itinerary**
+- Calculate the **total cost** of the trip
+- View a **summary of selected items** in a user-friendly interface
+
+This project is perfect for learning **React state management**, **Context API**, **component-based architecture**, and **Tailwind CSS for responsive UI**.
+
+---
+
+## 🚀 Features
+
+- **Search Functionality**: Quickly filter destinations, flights, and hotels
+- **Add to Itinerary**: Click on items to add them to your personal travel plan
+- **Total Cost Calculation**: Dynamic calculation of total trip cost
+- **Responsive Design**: Works on mobile, tablet, and desktop using Tailwind CSS
+- **Context API**: Global state management for itinerary items
+
+---
+
+## 🛠️ Technologies Used
+
+- **React** (Functional Components & Hooks)
+- **Tailwind CSS** for styling
+- **React Context API** for global state
+- **JavaScript (ES6+)**
+- **Optional**: Amadeus API integration for real travel data
+
+---
+
+## 📂 Project Structure
