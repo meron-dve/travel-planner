@@ -63,9 +63,8 @@ src/
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/yourusername/travel-planner-app.git
-cd travel-planner-app
-
+git clone https://github.com/yourusername/travel-planner.git
+cd travel-planner
 Install dependencies:
 
 npm install
@@ -102,6 +101,7 @@ Click Add to Itinerary to add any item
 View the Itinerary Summary at the bottom with total cost
 
 Remove items by clicking the ✕ button
+
 📈 Future Improvements
 
 Integrate Amadeus API for real-time flight and hotel data
@@ -114,9 +114,11 @@ Add multi-day trip planning and itinerary timeline
 
 Add filters by price, rating, and location
 
+
+
 📌 Author
 
-Your Meron Tsegaye
+Name: Meron Tsegaye
 
 GitHub: https://github.com/meron-dve
 
